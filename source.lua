@@ -219,7 +219,7 @@ function Library.GradientImage(E : Frame , Color)
 	GLImage.Size = UDim2.new(0.800000012, 0, 0.800000012, 0)
 	GLImage.SizeConstraint = Enum.SizeConstraint.RelativeYY
 	GLImage.ZIndex = E.ZIndex - 1;
-	GLImage.Image = "rbxassetid://867619398"
+	GLImage.Image = "rbxassetid://18804312868"
 	GLImage.ImageColor3 = Color or Color3.fromRGB(0, 195, 255)
 	GLImage.ImageTransparency = 1;
 
@@ -258,7 +258,7 @@ function Library.new(config)
 		Title = "UI Library",
 		Description = "discord.gg/BH6pE7jesa",
 		Keybind = Enum.KeyCode.LeftControl,
-		Logo = "http://www.roblox.com/asset/?id=18810965406",
+		Logo = "http://www.roblox.com/asset/?id=18804312868",
 		Size = UDim2.new(0.100000001, 445, 0.100000001, 315)
 	});
 
@@ -312,7 +312,7 @@ function Library.new(config)
 	ImageButton.Size = UDim2.new(0.0850000009, 0, 0.0850000009, 0)
 	ImageButton.SizeConstraint = Enum.SizeConstraint.RelativeYY
 	ImageButton.ZIndex = 50
-	ImageButton.Image = "rbxassetid://10002398990"
+	ImageButton.Image = "rbxassetid://18804312868"
 	ImageButton.ImageTransparency = 1
 	
 	local HomeIcon = Instance.new("ImageLabel")
@@ -324,7 +324,7 @@ function Library.new(config)
 	HomeIcon.Position = UDim2.new(0.5, 0, 0.5, 0)
 	HomeIcon.Size = UDim2.new(0.7,0,0.7,0)
 	HomeIcon.ZIndex = 49
-	HomeIcon.Image = "rbxassetid://7733993211"
+	HomeIcon.Image = "rbxassetid://18804312868"
 	HomeIcon.ScaleType = Enum.ScaleType.Fit
 	HomeIcon.ImageTransparency = 1;
 	HomeIcon.BackgroundTransparency = 1;
