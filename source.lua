@@ -1,3 +1,31 @@
+-- Ajout de l'UI avec image et pseudo
+local Players = game:GetService("Players")
+local Player = Players.LocalPlayer
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+
+ScreenGui.Parent = Player:WaitForChild("PlayerGui")
+
+Frame.Size = UDim2.new(0.8, 0, 0.3, 0) -- Rectangle plus grand
+Frame.Position = UDim2.new(0.1, 0, 0.35, 0)
+Frame.BackgroundTransparency = 1 -- Transparent pour voir l'image
+Frame.Parent = ScreenGui
+
+ImageLabel.Size = UDim2.new(1, 0, 1, 0)
+ImageLabel.Position = UDim2.new(0, 0, 0, 0)
+ImageLabel.Image = "rbxasset://textures/baniere.png" -- Remplace par le chemin correct
+ImageLabel.Parent = Frame
+
+TextLabel.Size = UDim2.new(1, 0, 0.2, 0)
+TextLabel.Position = UDim2.new(0, 0, 0.8, 0)
+TextLabel.Text = Player.Name -- Affiche ton pseudo
+TextLabel.TextScaled = true
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1
+TextLabel.Parent = Frame
+
 local Twen = game:GetService('TweenService');
 local Input = game:GetService('UserInputService');
 local TextServ = game:GetService('TextService');
