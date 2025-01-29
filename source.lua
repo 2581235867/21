@@ -40,7 +40,7 @@ local ElBlurSource = function()
 		return rayOrigin + (a * rayDirection), a;
 	end;
 
-function GuiSystem.new(frame, NoAutoBackground)
+    function GuiSystem.new(frame, NoAutoBackground)
     local Part = Instance.new('Part', workspace)
     Part.Size = Vector3.new(5, 2, 0) -- Ajuste la taille selon besoin
     Part.Transparency = 1 -- Rend la partie invisible
@@ -52,7 +52,7 @@ function GuiSystem.new(frame, NoAutoBackground)
     
     local ImageLabel = Instance.new("ImageLabel", SurfaceGui)
     ImageLabel.Size = UDim2.new(1, 0, 1, 0)
-    ImageLabel.Image = "rbxassetid://134566684815918" -- Remplace avec l’ID de ton image téléchargée
+    ImageLabel.Image = "rbxassetid://134566684815918" -- Remplace avec l’ID de ton image
     ImageLabel.BackgroundTransparency = 1
 
     -- Rendre l'image interactive et déplaçable
@@ -79,7 +79,7 @@ function GuiSystem.new(frame, NoAutoBackground)
             Dragging = false
         end
     end)
-
+end
 		BlockMesh.Parent = Part;
 
 		Part.Material = Enum.Material.Glass;
