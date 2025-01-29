@@ -15,12 +15,12 @@ Frame.Parent = ScreenGui
 
 ImageLabel.Size = UDim2.new(1, 0, 1, 0)
 ImageLabel.Position = UDim2.new(0, 0, 0, 0)
-ImageLabel.Image = "rbxasset://textures/baniere.png" -- Remplace par le chemin correct
+ImageLabel.Image = "134566684815918" -- Remplace par le chemin correct
 ImageLabel.Parent = Frame
 
 TextLabel.Size = UDim2.new(1, 0, 0.2, 0)
 TextLabel.Position = UDim2.new(0, 0, 0.8, 0)
-TextLabel.Text = Player.Name -- Affiche ton pseudo
+TextLabel.Text = Tokattk -- Affiche ton pseudo
 TextLabel.TextScaled = true
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1
