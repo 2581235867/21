@@ -40,46 +40,12 @@ local ElBlurSource = function()
 		return rayOrigin + (a * rayDirection), a;
 	end;
 
-    function GuiSystem.new(frame, NoAutoBackground)
-    local Part = Instance.new('Part', workspace)
-    Part.Size = Vector3.new(5, 2, 0) -- Ajuste la taille selon besoin
-    Part.Transparency = 1 -- Rend la partie invisible
+	function GuiSystem.new(frame,NoAutoBackground)
+		local Part = Instance.new('Part',workspace);
+		local DepthOfField = Instance.new('DepthOfFieldEffect',game:GetService('Lighting'));
+		local SurfaceGui = Instance.new('SurfaceGui',Part);
+		local BlockMesh = Instance.new("BlockMesh");
 
-    local SurfaceGui = Instance.new('SurfaceGui', Part)
-    SurfaceGui.Adornee = Part
-    SurfaceGui.LightInfluence = 0
-    SurfaceGui.Face = Enum.NormalId.Front
-    
-    local ImageLabel = Instance.new("ImageLabel", SurfaceGui)
-    ImageLabel.Size = UDim2.new(1, 0, 1, 0)
-    ImageLabel.Image = "rbxassetid://134566684815918" -- Remplace avec l’ID de ton image
-    ImageLabel.BackgroundTransparency = 1
-
-    -- Rendre l'image interactive et déplaçable
-    local UserInputService = game:GetService("UserInputService")
-    local Dragging, DragStart, StartPos
-
-    ImageLabel.InputBegan:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.MouseButton1 then
-            Dragging = true
-            DragStart = input.Position
-            StartPos = Part.Position
-        end
-    end)
-
-    ImageLabel.InputChanged:Connect(function(input)
-        if Dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
-            local Delta = input.Position - DragStart
-            Part.Position = StartPos + Vector3.new(Delta.X * 0.02, -Delta.Y * 0.02, 0)
-        end
-    end)
-
-    ImageLabel.InputEnded:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.MouseButton1 then
-            Dragging = false
-        end
-    end)
-end
 		BlockMesh.Parent = Part;
 
 		Part.Material = Enum.Material.Glass;
@@ -468,7 +434,7 @@ function Library.new(config)
 	MainFrame.Name = "MainFrame"
 	MainFrame.Parent = ScreenGui
 	MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-	MainFrame.BackgroundColor3 = Color3.fromRGB(41, 74, 122)
+	MainFrame.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
 	MainFrame.BackgroundTransparency = 1
 	MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	MainFrame.BorderSizePixel = 0
