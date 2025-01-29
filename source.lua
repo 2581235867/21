@@ -475,7 +475,7 @@ function Library.new(config)
 
 	Headers.Name = "Headers"
 	Headers.Parent = MainFrame
-	Headers.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+	Headers.BackgroundColor3 = Color3.fromRGB(15, 20, 40)
 	Headers.BackgroundTransparency = 1
 	Headers.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	Headers.BorderSizePixel = 0
@@ -610,7 +610,7 @@ function Library.new(config)
 	TabButtonFrame.Name = "TabButtonFrame"
 	TabButtonFrame.Parent = MainFrame
 	TabButtonFrame.AnchorPoint = Vector2.new(0.5, 0)
-	TabButtonFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+	TabButtonFrame.BackgroundColor3 = Color3.fromRGB(15, 20, 40)
 	TabButtonFrame.BackgroundTransparency = 1
 	TabButtonFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	TabButtonFrame.BorderSizePixel = 0
@@ -645,7 +645,7 @@ function Library.new(config)
 	MainTabFrame.Name = "MainTabFrame"
 	MainTabFrame.Parent = MainFrame
 	MainTabFrame.AnchorPoint = Vector2.new(0.5, 0)
-	MainTabFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+	MainTabFrame.BackgroundColor3 = Color3.fromRGB(20, 25, 50)
 	MainTabFrame.BackgroundTransparency = 1
 	MainTabFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	MainTabFrame.BorderSizePixel = 0
@@ -826,7 +826,7 @@ function Library.new(config)
 			Title.ZIndex = 104
 			Title.Font = Enum.Font.GothamBold
 			Title.Text = title
-			Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+			Title.TextColor3 = Color3.fromRGB(180, 200, 255)
 			Title.TextScaled = true
 			Title.TextSize = 14.000
 			Title.TextWrapped = true
@@ -2557,7 +2557,7 @@ Library.NewAuth = function(conf)
 	MainFrame.Parent = Auth
 	MainFrame.Active = true
 	MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-	MainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	MainFrame.BackgroundColor3 = Color3.fromRGB(10, 15, 30)
 	MainFrame.BackgroundTransparency = 0.500
 	MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	MainFrame.BorderSizePixel = 0
